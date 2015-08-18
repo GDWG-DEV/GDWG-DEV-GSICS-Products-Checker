@@ -1,0 +1,31 @@
+<!--?xml version="1.0"?-->
+
+<employees xsi:noNamespaceSchemaLocation="employees.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <employee emplid="1111" type="admin">
+        <firstname>John</firstname>
+        <lastname>Watson</lastname>
+        <age>30</age>
+        <email type="home">johnwatson@sh.com</email>
+    </employee>
+    <employee emplid="2222" type="admin">
+        <firstname>Sherlock</firstname>
+        <lastname>Homes</lastname>
+        <age>32</age>
+        <email type="office">sherlock@sh.com</email>
+    </employee>
+    <employee emplid="3333" type="user">
+        <firstname>Jim</firstname>
+        <lastname>Moriarty</lastname>
+        <age>52</age>
+        <email type="gameTag">jim@sh.com</email>
+    </employee>
+    <employee emplid="4444" type="user">
+        <firstname>Mycroft</firstname>
+        <lastname>Holmes</lastname>
+        <age>41</age>
+        <email type="rubbish">mycroft@sh.com</email>
+    </employee>
+    
+    <!-- Tags below this comment are programmatically generated -->
+    
+</employees>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- howto.xsd must be located in the CLASSPATH -->
+
+<!-- ERROR: root tag show be howto_err1 -->
+<howto xsi:noNamespaceSchemaLocation="howto_err1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+       
+  <topic>
+      <title>Java</title>
+      <url>http://www.rgagnon.com/topics/java-xml.html</url>
+  </topic>
+  <topic>
+      <title>PowerBuilder</title>
+      <url>http://www.rgagnon.com/topics/pb-powerscript.htm</url>
+  </topic>
+  <topic>
+        <title>Javascript</title>
+        <url>http://www.rgagnon.com/topics/js-language.html</url>
+  </topic>
+  <topic>
+        <title>VBScript</title>
+        <url>http://www.rgagnon.com/topics/wsh-vbs.html</url>
+  </topic>
+</howto_err1>
