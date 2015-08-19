@@ -12,14 +12,14 @@ import org.junit.Test;
 
 public class NetCDF2NcMLTests
 {
-	private static final String GEOLEOIR_netCDF_TESTFILE1 = "f:/F-Work/W_XX-EUMETSAT-Darmstadt,SATCAL+RAC+GEOLEOIR,MSG3+SEVIRI-MetOpA+IASI_C_EUMG_20130110000000_preop_01.nc";
+	private static final String GEOLEOIR_netCDF_TESTFILE1 = "f:/F-Work/git/NetCDF_Checker/Utils/tests/testData/W_XX-EUMETSAT-Darmstadt,SATCAL+RAC+GEOLEOIR,MSG3+SEVIRI-MetOpA+IASI_C_EUMG_20130110000000_preop_01.nc";
 
-	private static final String GEOLEOIR_netCDF_TESTFILE2 = "f:/F-Work/GEOLEOIR.nc";
+	private static final String GEOLEOIR_netCDF_TESTFILE2 = "f:/F-Work/git/NetCDF_Checker/Utils/tests/testData/GEOLEOIR.nc";
 	
-	private static final String GEOLEOIR_ncml_OUTPUT_FILE2 = "f:/F-Work/GEOLEOIR_RES.ncml";
+	private static final String GEOLEOIR_ncml_OUTPUT_FILE2 = "f:/F-Work/git/NetCDF_Checker/Utils/tests/testData/GEOLEOIR_RES.ncml";
 	
-	private static final String WEB_FILE = "f:/F-Work/web.xmdl";
-	private static final String WEB_OUTPUT_FILE = "f:/F-Work/web.ncml";
+	private static final String WEB_FILE = "f:/F-Work/git/NetCDF_Checker/Utils/tests/testData/web.xmdl";
+	private static final String WEB_OUTPUT_FILE = "f:/F-Work/git/NetCDF_Checker/Utils/tests/testData/web.ncml";
 	
 	@Before
 	public void setUp( ) throws Exception
@@ -52,8 +52,10 @@ public class NetCDF2NcMLTests
 		{
 			IOUtils.pr( ex.toString( ) );
 		}
-		
-		return( status );
+		finally
+		{
+			return( status );			
+		}		
 	}
 	
 	/**
@@ -78,8 +80,10 @@ public class NetCDF2NcMLTests
 		{
 			IOUtils.pr( ex.toString( ) );
 		}
-		
-		return( status );
+		finally
+		{
+			return( status );			
+		}
 	}
 	
 	@Test
@@ -87,10 +91,10 @@ public class NetCDF2NcMLTests
 	{
 		boolean status = runTest1( GEOLEOIR_netCDF_TESTFILE1 );
 		
-		assert( status );
+		assertTrue( status );
 		
 		status = runTest2( GEOLEOIR_netCDF_TESTFILE2, GEOLEOIR_ncml_OUTPUT_FILE2 );
 		
-		assert( status );
+		assertTrue( status );
 	}
 }
